@@ -1,0 +1,141 @@
+
+
+			+-------------------+
+			|Choose Genetic Code|
+			+-------------------+
+
+
+	(1):[Universal] Universal code. (Genebank transl_table=1).
+	(2):[Vertebrate mtDNA] Vertebrate mitochondrial DNA code. (Genebank transl_table=2).
+	(3):[Yeast mtDNA] Yeast mitochondrial DNA code. (Genebank transl_table=3).
+	(4):[Mold/Protozoan mtDNA] Mold, Protozoan and Coelenterate mitochondrial DNA and the Mycloplasma/Spiroplasma code. (Genebank transl_table=4).
+	(5):[Invertebrate mtDNA] Invertebrate mitochondrial DNA code. (Genebank transl_table=5).
+	(6):[Ciliate Nuclear] Ciliate, Dasycladacean and Hexamita Nuclear code. (Genebank transl_table=6).
+	(7):[Echinoderm mtDNA] Echinoderm mitochondrial DNA code. (Genebank transl_table=9).
+	(8):[Euplotid Nuclear] Euplotid Nuclear code. (Genebank transl_table=10).
+	(9):[Alt. Yeast Nuclear] Alternative Yeast Nuclear code. (Genebank transl_table=12).
+	(10):[Ascidian mtDNA] Ascidian mitochondrial DNA code. (Genebank transl_table=13).
+	(11):[Flatworm mtDNA] Flatworm mitochondrial DNA code. (Genebank transl_table=14).
+	(12):[Blepharisma Nuclear] Blepharisma Nuclear code. (Genebank transl_table=15).
+
+ Please choose an option (or press q to cancel selection):
+/home/devani/PIPE/programs/./TemplateBatchFiles/Please specify a codon data file::
+  ---------------------------
+  | READ THE FOLLOWING DATA |
+  ---------------------------
+
+19 species:{gi204594gbM312291RATHIS1D,gi155371862refNM_0011010661,gi302563994refNM_0011938191,gi184071gbM607471HUMHISAB,gi640799160refXM_0080576021,gi674047948refXM_0088318561,gi507983367refXM_0046948541,gi545554635refXM_0056401121,gi586537359refXM_0069234701,gi831224188refXM_0037887822,gi507574685refXM_0046708351,gi545197435refXM_0056036271,gi755726606refXM_0039857093,gi667257010refXM_0085678441,gi694914948refXM_0011728082,gi560911872refXM_0061821641,gi742138186refXM_0108434221,gi821118763refXM_0044635182,gi685535212refXM_0038971832};
+Total Sites:253;
+Distinct Sites:89
+/home/devani/PIPE/programs/./TemplateBatchFiles/Please select a tree file for the data::
+
+			+-------------+
+			|Distributions|
+			+-------------+
+
+
+	(1):[Run All] Run all available dN/dS distributions
+	(2):[Run Custom] Choose from available dN/dS distributions.
+
+ Please choose an option (or press q to cancel selection):
+
+			+-------------+
+			|Distributions|
+			+-------------+
+
+
+	(1):[Single Rate] Single Rate
+	(2):[Neutral] Neutral
+	(3):[Selection] Selection
+	(4):[Discrete] Discrete
+	(5):[Freqs] Freqs
+	(6):[Gamma] Gamma
+	(7):[2 Gamma] 2 Gamma
+	(8):[Beta] Beta
+	(9):[Beta & w] Beta & w
+	(10):[Beta & Gamma] Beta & Gamma
+	(11):[Beta & (Gamma+1)] Beta & (Gamma+1)
+	(12):[Beta & (Normal>1)] Beta & (Normal>1)
+	(13):[0 & 2 (Normal>1)] 0 & 2 (Normal>1)
+	(14):[3 Normal] 3 Normal
+	(15):[Gamma mod Beta] Two parameter gamma partitioned by a two parameter beta
+	(16):[Beta & 1] Discrete beta and a point mass at one. The M8a model from PAML.
+
+ Please choose option 1, enter d to complete selection, enter q to cancel:
+	(1):[Single Rate] Single Rate
+	(2):[Neutral] Neutral
+	(3):[Selection] Selection
+	(4):[Discrete] Discrete
+	(5):[Freqs] Freqs
+	(6):[Gamma] Gamma
+	(7):[2 Gamma] 2 Gamma
+	(9):[Beta & w] Beta & w
+	(10):[Beta & Gamma] Beta & Gamma
+	(11):[Beta & (Gamma+1)] Beta & (Gamma+1)
+	(12):[Beta & (Normal>1)] Beta & (Normal>1)
+	(13):[0 & 2 (Normal>1)] 0 & 2 (Normal>1)
+	(14):[3 Normal] 3 Normal
+	(15):[Gamma mod Beta] Two parameter gamma partitioned by a two parameter beta
+	(16):[Beta & 1] Discrete beta and a point mass at one. The M8a model from PAML.
+
+ Please choose option 2, enter d to complete selection, enter q to cancel:
+	(1):[Single Rate] Single Rate
+	(2):[Neutral] Neutral
+	(3):[Selection] Selection
+	(4):[Discrete] Discrete
+	(5):[Freqs] Freqs
+	(6):[Gamma] Gamma
+	(7):[2 Gamma] 2 Gamma
+	(10):[Beta & Gamma] Beta & Gamma
+	(11):[Beta & (Gamma+1)] Beta & (Gamma+1)
+	(12):[Beta & (Normal>1)] Beta & (Normal>1)
+	(13):[0 & 2 (Normal>1)] 0 & 2 (Normal>1)
+	(14):[3 Normal] 3 Normal
+	(15):[Gamma mod Beta] Two parameter gamma partitioned by a two parameter beta
+	(16):[Beta & 1] Discrete beta and a point mass at one. The M8a model from PAML.
+
+ Please choose option 3, enter d to complete selection, enter q to cancel:
+
+			+--------------+
+			|Initial Values|
+			+--------------+
+
+
+	(1):[Default] Use default initial values for distribution parameters
+	(2):[Custom] Enter custom initial values for distribution parameters
+
+ Please choose an option (or press q to cancel selection):
+
+			+--------------+
+			|Choose a model|
+			+--------------+
+
+
+	(1):[MG94 1x4] Muse-Gaut 94 model with 4(-1) nucleotide frequency parameters (intra-codon position independent).
+	(2):[MG94 3x4] Muse-Gaut 94 model with 12(-3) nucleotide frequency parameters (intra-codon position specific).
+	(3):[GY94 1x4] Goldman-Yang 94 model with 4(-1) nucleotide frequency parameters (intra-codon position independent).
+	(4):[GY94 3x4] Goldman-Yang 94 model with 12(-3) nucleotide frequency parameters (intra-codon position specific).
+	(5):[MG94 Custom 1x4] Muse-Gaut 94 crossed with an arbitrary nucelotide substitution model with 4(-1) nucleotide frequency parameters (intra-codon position independent).
+	(6):[MG94 Custom 3x4] Muse-Gaut 94 crossed with an arbitrary nucelotide substitution model with 12(-3) nucleotide frequency parameters (intra-codon position specific).
+
+ Please choose an option (or press q to cancel selection):
+Choose the cutoff (0 to 1) for posterior of dN/dS>1 for a site to be considered under selective pressure:
+>Using 0.5 cutoff
+
+Choose the number of categories in discretized distributions:
+>Using 10 categories.
+
+/home/devani/PIPE/programs/./TemplateBatchFiles/Write detailed results to::
+  -----------------
+  | SUMMARY TABLE |
+  -----------------
+
+"p" is the number of estimated model parameters.
+Detailed results including sites with dN/dS>1 will be written to
+/home/devani/PIPE/H1.4mammals_3/results_selection2
+
++-------------------------+----------------+---------------+---------+
+| MODEL (Number & Desc)   | Log likelihood |     dN/dS     |    p    |
++-------------------------+----------------+---------------+---------+
+|  7. Beta                |   -1241.590992 |    0.03557689 |     40  |
++-------------------------+----------------+---------------+---------+

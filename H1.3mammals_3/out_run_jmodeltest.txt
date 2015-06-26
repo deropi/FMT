@@ -1,0 +1,141 @@
+
++--------------------------------+
+| RUNNING MODEL TESTING ANALYSIS |
+| Based on the program ModelTest |
+|              by                |
+|        David  Posada           |
+|             and                |
+|        Keith Crandall          |
+|                                |
+|    If you use this analysis,   |
+| be sure to cite the original   |
+| reference, which can be found  |
+| in Bioinformatics (1998)       |
+| Vol 14, ppg. 817-818           |
++--------------------------------+
+
+Testing space includes 56 models
+
+/home/devani/PIPE/programs/./TemplateBatchFiles/Please specify a nucleotide data file::
+
+Data read from "/home/devani/PIPE/H1.3mammals_3/dna_aligned_no_gaps.fas"
+19 species:{gi204594gbM312291RATHIS1D,gi155371862refNM_0011010661,gi302563994refNM_0011938191,gi640799160refXM_0080576021,gi674047948refXM_0088318561,gi507983367refXM_0046948541,gi545554635refXM_0056401121,gi586537359refXM_0069234701,gi831224188refXM_0037887822,gi507574685refXM_0046708351,gi545197435refXM_0056036271,gi755726606refXM_0039857093,gi667257010refXM_0085678441,gi694914948refXM_0011728082,gi560911872refXM_0061821641,gi742138186refXM_0108434221,gi821118763refXM_0044635182,gi685535212refXM_0038971832,gi184071gbM607471HUMHISAB};
+Total Sites:603;
+Distinct Sites:270
+
+/home/devani/PIPE/programs/./TemplateBatchFiles/Please select a tree file for the data::
+Number of rate classes in rate variation models (e.g. 4):
+
+			+----------------------+
+			|Model Selection Method|
+			+----------------------+
+
+
+	(1):[Hierarchical Test] Perform a series of nested model comparisons to select the model.
+	(2):[AIC Test] Obtain MLEs for each model, and select the best one using Akaike Information Criterion.
+	(3):[Both] Run the AIC test, followed by the Hierarchical test
+
+ Please choose an option (or press q to cancel selection):
+
+****** RUNNING AIC BASED MODEL SELECTION ******
+
+
+|  Model     | # prm |    lnL    |    AIC     |
+|------------|-------|-----------|------------|
+| JC69       |    35 | -15046.839 |  30163.678 | *
+| JC69+G     |    36 | -5185.740 |  10443.479 | *
+| JC69+G+I   |    37 | -5216.943 |  10507.887 |
+| JC69+I     |    36 | -8441.799 |  16955.598 |
+| F81        |    38 | -14288.673 |  28653.346 |
+| F81+G      |    39 | -14288.673 |  28655.346 |
+| F81+G+I    |    40 | -8024.899 |  16129.798 |
+| F81+I      |    39 | -8024.899 |  16127.798 |
+| K80        |    36 | -15046.839 |  30165.678 |
+| K80+G      |    37 | -15046.839 |  30167.678 |
+| K80+G+I    |    38 | -8441.799 |  16959.598 |
+| K80+I      |    37 | -8441.799 |  16957.598 |
+| HKY85      |    39 | -14288.673 |  28655.346 |
+| HKY85+G    |    40 | -5061.587 |  10203.174 | *
+| HKY85+G+I  |    41 | -5117.477 |  10316.953 |
+| HKY85+I    |    40 | -8024.899 |  16129.798 |
+| TrNef      |    37 | -15046.839 |  30167.678 |
+| TrNef+G    |    38 | -5612.732 |  11301.464 |
+| TrNef+G+I  |    39 | -5164.008 |  10406.016 |
+| TrNef+I    |    38 | -8441.799 |  16959.598 |
+| TrN        |    40 | -14288.673 |  28657.346 |
+| TrN+G      |    41 | -4949.033 |   9980.067 | *
+| TrN+G+I    |    42 | -5081.058 |  10246.117 |
+| TrN+I      |    41 | -8024.899 |  16131.798 |
+| K81        |    37 | -15046.839 |  30167.678 |
+| K81+G      |    38 | -15046.839 |  30169.678 |
+| K81+G+I    |    39 | -8441.799 |  16961.598 |
+| K81+I      |    38 | -8441.840 |  16959.679 |
+| K81uf      |    40 | -14288.673 |  28657.346 |
+| K81uf+G    |    41 | -14288.673 |  28659.346 |
+| K81uf+G+I  |    42 | -8024.899 |  16133.798 |
+| K81uf+I    |    41 | -8024.899 |  16131.798 |
+| TIMef      |    38 | -15046.839 |  30169.678 |
+| TIMef+G    |    39 | -5602.717 |  11283.433 |
+| TIMef+G+I  |    40 | -8441.799 |  16963.598 |
+| TIMef+I    |    39 | -8441.799 |  16961.598 |
+| TIM        |    41 | -14288.673 |  28659.346 |
+| TIM+G      |    42 | -5123.108 |  10330.217 |
+| TIM+G+I    |    43 | -5119.206 |  10324.412 |
+| TIM+I      |    42 | -8024.899 |  16133.798 |
+| TVMef      |    38 | -15046.839 |  30169.678 |
+| TVMef+G    |    39 | -5123.430 |  10324.860 |
+| TVMef+G+I  |    40 | -5111.998 |  10303.996 |
+| TVMef+I    |    39 | -8441.799 |  16961.598 |
+| TVM        |    41 | -14288.673 |  28659.346 |
+| TVM+G      |    42 | -5705.872 |  11495.745 |
+| TVM+G+I    |    43 | -5251.357 |  10588.714 |
+| TVM+I      |    42 | -8024.900 |  16133.800 |
+| SYM        |    40 | -15046.839 |  30173.678 |
+| SYM+G      |    41 | -5572.157 |  11226.313 |
+| SYM+G+I    |    42 | -8441.799 |  16967.598 |
+| SYM+I      |    41 | -8441.799 |  16965.598 |
+| GTR        |    43 | -14288.673 |  28663.346 |
+| GTR+G      |    44 | -4940.674 |   9969.347 | *
+| GTR+G+I    |    45 | -5009.146 |  10108.292 |
+| GTR+I      |    44 | -8024.940 |  16137.879 |
+|------------|-------|-----------|------------|
+
+AIC-based model: GTR+G, AIC = 9969.35
+/home/devani/PIPE/programs/./TemplateBatchFiles/Save AIC-based fit to::
+
+ ******* AIC based model (GTR+G) ******** 
+
+Rate matrix
++---+-------------+-------------+-------------+-------------+
+|   |      A      |      C      |      G      |      T      |
++---+-------------+-------------+-------------+-------------+
+| A |      *      |     0.11810 |     1.00000 |     0.54337 |
++---+-------------+-------------+-------------+-------------+
+| C |     0.11810 |      *      |     0.54337 |     4.65657 |
++---+-------------+-------------+-------------+-------------+
+| G |     1.00000 |     0.54337 |      *      |     1.57624 |
++---+-------------+-------------+-------------+-------------+
+| T |     0.54337 |     4.65657 |     0.54337 |      *      |
++---+-------------+-------------+-------------+-------------+
+
+Base frequencies
+A =     0.2769
+C =     0.3038
+G =     0.3174
+T =     0.1018
+
+Rate variation
+Rate     1 =    0.00000 (weight =    0.25000)
+Rate     2 =    0.00002 (weight =    0.25000)
+Rate     3 =    0.01907 (weight =    0.25000)
+Rate     4 =    3.98091 (weight =    0.25000)
+
+
+To define this model (if it isn't predefined) for analyses,
+Use 'Custom' model with the following options:
+Model String:012345
+Model Options: Rate Variation, then choose the Gamma distribution
+Equilibrium Frequencies Option: Observed
+
+
+
