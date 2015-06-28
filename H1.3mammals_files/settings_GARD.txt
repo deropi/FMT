@@ -1,0 +1,4 @@
+/home/devani/PIPE/H1.3mammals_3/dna_aligned_no_gaps.fas
+012345
+1
+/home/devani/PIPE/H1.3mammals_3/GARD.txt

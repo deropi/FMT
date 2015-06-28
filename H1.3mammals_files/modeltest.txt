@@ -1,0 +1,5 @@
+/home/devani/PIPE/H1.3mammals_3/dna_aligned_no_gaps.fas
+/home/devani/PIPE/H1.3mammals_3/arbol_inicial.nex
+4
+2
+/home/devani/PIPE/H1.3mammals_3/model_test_out

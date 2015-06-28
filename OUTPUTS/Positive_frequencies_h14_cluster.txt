@@ -1,0 +1,2 @@
+Averaged omega value	0.11647353319
+Averaged omega value per partition	0.148581352168	0.0356123901916	0.184427666004	
