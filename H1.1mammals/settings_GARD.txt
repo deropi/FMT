@@ -1,4 +1,0 @@
-/home/devani/PIPE/H1.1_prueba2/dna_aligned_no_gaps.fas
-012310
-1
-/home/devani/PIPE/H1.1_prueba2/GARD.txt
