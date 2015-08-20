@@ -28,12 +28,12 @@ omegas=[]
 positions=[]
 selection=[]
 breakpoints=[]
-file= open('output.txt','r')
+file= open('results_h11_manual.txt','r')
 content= file.readlines()
 match= re.search('Significant positive selection sites found', content[1])
 if match:
     positives=[]
-    file= open('output.txt','r')
+    file= open('results_h11_manual.txt','r')
     content= file.readlines()
     content1= content[4:len(content)]
     reader=csv.reader(content1,delimiter='\t')
@@ -56,11 +56,11 @@ if match:
             break
         else:
             aas= aas + fasta1[i]
-    frequencies= open('Positive_frequencies_h14_cluster.txt', 'w')
+    frequencies= open('Positive_frequencies_h14_manual.txt', 'w')
     frequencies.write('Pos\taa\tfreq')
     frequencies.write('\n')
-    for i in range(0, len(positives)):
-            posicion = int(positives[i])
+    for i in range(0, len(selection)):
+            posicion = int(selection[i])
             file = open('protSEQ.fas', 'r')
             aminoacidos=['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q','R','S','T','U', 'V', 'W', 'Y']
             cuenta=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -108,7 +108,7 @@ if match:
         fig, ax = plt.subplots()
         ax.plot(positions, omegas, linewidth=0.7)
         plt.xlim(int(positions[0]),int(len(positions)-1)+2)
-        plt.ylim((float(min(omegas))-0.07), (float(max(omegas)))+0.2)
+        plt.ylim((float(min(omegas))-0.1), (float(max(omegas)))+0.2)
    
         ax.set_xlabel('Protein position')
         ax.set_ylabel('Omega value')
@@ -116,18 +116,18 @@ if match:
                           ax.text((selection[v]), float(min(omegas)), '*', style='normal', color= 'red',  fontsize=7)
         for g in range(0, len(positions)):
             if float(omegas[g]) >1.05 and float(omegas[g]) < 1.3:
-                ax.text((positions[g]), (float(min(omegas))-0.08)+0.03, aas[g], style='normal', color= 'lightsalmon',  fontsize=7)
+                ax.text((positions[g]), (float(min(omegas))-0.1)+0.03, aas[g], style='normal', color= 'lightsalmon',  fontsize=7)
             else:
                 if float(omegas[g]) >= 1.3:
-                    ax.text((positions[g]), (float(min(omegas))-0.08)+0.03, aas[g], style='normal', color= 'crimson',  fontsize=7)
+                    ax.text((positions[g]), (float(min(omegas))-0.1)+0.03, aas[g], style='normal', color= 'crimson',  fontsize=7)
                 else:
                     if float(omegas[g]) >0 and float(omegas[g]) <= 0.5:
-                        ax.text((positions[g]),(float(min(omegas))-0.08)+0.03, aas[g], style='normal', color= 'forestgreen',  fontsize=7)
+                        ax.text((positions[g]),(float(min(omegas))-0.1)+0.03, aas[g], style='normal', color= 'forestgreen',  fontsize=7)
                     else:
                         if float(omegas[g]) >=0.95 and float(omegas[g]) <= 1.03:
-                            ax.text((positions[g]), (float(min(omegas))-0.08)+0.03, aas[g], style='normal',color= 'darkturquoise',  fontsize=7)
+                            ax.text((positions[g]), (float(min(omegas))-0.1)+0.03, aas[g], style='normal',color= 'darkturquoise',  fontsize=7)
                         else:
-                            ax.text((positions[g]), (float(min(omegas))-0.08)+0.03, aas[g], style='normal', color= 'lawngreen',  fontsize=7)
+                            ax.text((positions[g]), (float(min(omegas))-0.1)+0.03, aas[g], style='normal', color= 'lawngreen',  fontsize=7)
         matplotlib.pyplot.axhline(y=1,color= 'r', linewidth=0.4, linestyle="dashed")
         import matplotlib.patches as mpatches
         red_patch = mpatches.Patch(color='red', label='* Adaptive Positions')

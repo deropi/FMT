@@ -13,7 +13,7 @@ omega1=[]
 categoria=[]
 positives=[]
 breakpoints=[]
-for exis in range(1, 4):
+for exis in range(1, 3):
     
     file= open ("rst%i" %exis, "r")
     lnL= []
@@ -99,7 +99,7 @@ for i in range(1, len(omega1)+1):
     positions.append('%i' %i)
 
 if positives:
-            out= open('results_h15_manual.txt', 'w')
+            out= open('results_h14_manual.txt', 'w')
             out.write('+-----------------------------------------------------+')
             out.write('\n')
             out.write('|      Significant positive selection sites found     |')
@@ -139,7 +139,7 @@ if positives:
             
             out.close()
 elif not positives:
-            out= open('results_h14_manual.txt', 'w')            
+            out= open('results_h11_manual.txt', 'w')            
             out.write('+-----------------------------------------------------+')
             out.write('\n')
             out.write('|             No Positive selection found             |')
